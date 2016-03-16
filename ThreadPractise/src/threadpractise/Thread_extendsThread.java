@@ -1,13 +1,12 @@
 package threadpractise;
 
-public class ThreadCreated extends Thread
+public class Thread_extendsThread extends Thread
 {
     private String name;
     
-    public ThreadCreated(String name)
+    public Thread_extendsThread(String name)
     {
         super(name);
-//        this.name = name;
     }
     
     public void run()

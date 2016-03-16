@@ -1,13 +1,13 @@
 package threadpractise;
 
-public class Test_ThreadCreated 
+public class Test_Thread_extendsThread 
 {
     public static void main(String args[])
     {
         Thread t = new Thread();
         
-        ThreadCreated tc1 = new ThreadCreated("Outer");
-        ThreadCreated tc2 = new ThreadCreated("Inner");
+        Thread_extendsThread tc1 = new Thread_extendsThread("Outer");
+        Thread_extendsThread tc2 = new Thread_extendsThread("Inner");
         
         tc1.start();
         System.out.println("This is the GAP!!..." + Thread.currentThread().getName());
