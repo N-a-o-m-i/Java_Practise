@@ -4,6 +4,7 @@
 .settings/
 bin/
 
+.class
 build/
 build.xml
 manifest.mf
