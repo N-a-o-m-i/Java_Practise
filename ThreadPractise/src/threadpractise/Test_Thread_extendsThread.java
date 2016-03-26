@@ -4,7 +4,6 @@ public class Test_Thread_extendsThread
 {
     public static void main(String args[])
     {
-        Thread t = new Thread();
         
         Thread_extendsThread tc1 = new Thread_extendsThread("Outer");
         Thread_extendsThread tc2 = new Thread_extendsThread("Inner");
