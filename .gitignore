@@ -10,3 +10,5 @@ build.xml
 manifest.mf
 nbproject/
 test/
+
+dist/
