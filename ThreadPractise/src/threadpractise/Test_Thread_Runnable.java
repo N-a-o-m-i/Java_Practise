@@ -2,6 +2,7 @@ package threadpractise;
 
 public class Test_Thread_Runnable 
 {
+
     public static void main(String args[])
     {
         

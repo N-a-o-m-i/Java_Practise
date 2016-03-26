@@ -1,29 +1,18 @@
 package threadpractise;
 
-public class Test_Ticket_extendsThread_Example extends Thread
+public class Test_Ticket_ThreadExample
 {
-    public static int NUM = 100;
-    public String name;
-    
-    public Test_Ticket_extendsThread_Example(String name)
+    public static void main(String args[])
     {
-        super(name);
+         Test_Ticket_extendsThread_Example t1 = new Test_Ticket_extendsThread_Example("Window One");
+         Test_Ticket_extendsThread_Example t2 = new Test_Ticket_extendsThread_Example("Window Two");
+         Test_Ticket_extendsThread_Example t3 = new Test_Ticket_extendsThread_Example("Window Three");
+         Test_Ticket_extendsThread_Example t4 = new Test_Ticket_extendsThread_Example("Window Four");
+         
+         t1.start();
+         t2.start();
+         t3.start();
+         t4.start();
     }
-    
-    public void run()
-    {
-        sale();
-    }
-    
-    public void sale()
-    {
-        while(true)
-        {
-            if(NUM > 0)
-            {
-                System.out.println(Thread.currentThread().getName() + "...sale..." + NUM--);
-            }
-        }
-    }
-    
+ 
 }

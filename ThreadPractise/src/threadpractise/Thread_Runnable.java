@@ -4,8 +4,9 @@ public class Thread_Runnable implements Runnable
 {
     
     @Override
-    public void run() {
-        show();
+    public void run() 
+    {
+        show();  
     }
     
     public void show()
