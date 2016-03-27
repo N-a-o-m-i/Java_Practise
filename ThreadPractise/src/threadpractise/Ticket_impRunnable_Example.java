@@ -2,8 +2,9 @@ package threadpractise;
 
 public class Ticket_impRunnable_Example implements Runnable
 {
-    public static int NUM = 100;
-        
+    public static int NUM = 10000;
+    Object object = new Object();    
+    
     public void run()
     {
         sale();
@@ -13,9 +14,21 @@ public class Ticket_impRunnable_Example implements Runnable
     {
         while(true)
         {
-            if(NUM > 0)
+            synchronized(object)
             {
-                System.out.println(Thread.currentThread().getName() + "...sale..." + NUM--);
+                if(NUM > 0)
+                {
+//                    try
+//                    {
+//                        Thread.sleep(10);
+//                    }
+//                    catch(InterruptedException e)
+//                    {
+//
+//                    }
+                    System.out.println(Thread.currentThread().getName() + "...sale..." + NUM--);
+
+                }
             }
         }
     }
