@@ -1,0 +1,10 @@
+run:
+Roy22......hashCode checked
+Shaun23......hashCode checked
+Sunny29......hashCode checked
+Shaun23......hashCode checked
+Shaun23...same hashCode...equals checked...Shaun23
+Roy...22
+Sunny...29
+Shaun...23
+BUILD SUCCESSFUL (total time: 0 seconds)
