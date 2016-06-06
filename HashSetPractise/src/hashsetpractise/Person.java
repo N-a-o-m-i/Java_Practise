@@ -31,6 +31,11 @@ public class Person extends Object
     @Override
     public boolean equals(Object obj) 
     {
+        if(this == obj)
+            return true;
+        if(!(obj instanceof Person))
+            throw new ClassCastException("Wrong type");
+            
         System.out.println(this + "...same hashCode...equals checked..." + obj);
         Person p = (Person) obj;
         
